@@ -11,11 +11,11 @@ const Add = (props) => {
     height: ''
   })
 
-  const handleChange = event = setValues({...values, [event.target.name]: event.target.value});
+  const handleChange = event => setValues({...values, [event.target.name]: event.target.value});
 
   const handleSubmit = async event => {
     event.preventDefault();
-    await props.addSmurfs(vaues)
+    await props.addSmurfs(values)
   };
 
   return (

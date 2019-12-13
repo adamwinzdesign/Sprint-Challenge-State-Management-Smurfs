@@ -15,13 +15,13 @@ const List = props => {
       <h1>Welcome to Smurf Village!</h1>
       <button onClick={fetchSmurfs}>Smurf our Smurfs in Smurf Village!</button>
       <div>
-        {props.smurfs.map(smurf => {
+        {props.smurfs.map(smurf => (
           <div key={smurf.id}>
             <p>Name: {smurf.name}</p>
             <p>Age: {smurf.age}</p>
             <p>Height: {smurf.height}</p>
           </div>
-        })}
+        ))}
       </div>
     </div>
   )

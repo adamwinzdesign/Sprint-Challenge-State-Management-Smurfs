@@ -28,6 +28,14 @@ const Add = (props) => {
         placeholder='name'
         value={values.name}
       />
+
+      <input 
+        type='text'
+        name='age'
+        onChange={handleChange}
+        placeholder='age'
+        value={values.age}
+      />
       
       <input 
         type='text'

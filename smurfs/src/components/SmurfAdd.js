@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import { addSmurfs } from '../actions/index';
 import { connect } from 'react-redux';
 
+import "../index.css";
+
 const Add = (props) => {
   const [values, setValues] = useState ({
     name: '',
@@ -19,7 +21,7 @@ const Add = (props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='smurfAddForm'>
       <label>Let's Smurf a new Smurf!</label>
       <input
         type='text'

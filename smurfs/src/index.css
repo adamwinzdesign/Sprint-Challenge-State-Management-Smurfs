@@ -3,3 +3,25 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.cardContain {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.smurfCard {
+  border: 2px solid black;
+  background: #2B70AA;
+  color: white;
+  margin: 1rem;
+}
+
+.smurfAddForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.smurfAddForm label, .smurfAddForm input {
+  padding: .25rem;
+}
